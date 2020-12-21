@@ -26,11 +26,11 @@ class Song
     
     out_hash = {}
     
-    @@genres.each do |artist|
-      if out_hash.keys.include?(artist)
-        out_hash[artist] += 1 
+    @@genres.each do |genre|
+      if out_hash.keys.include?(genre)
+        out_hash[genre] += 1 
       else
-        out_hash[artist] = 1 
+        out_hash[genre] = 1 
       end
       
       out_hash
@@ -45,7 +45,16 @@ class Song
   
   def self.artist_count
     
-    @@artists.uniq.length
+    out_hash = {}
+    
+    @@artists.each do |artist|
+      if out_hash.keys.include?(artist)
+        out_hash[artist] += 1 
+      else
+        out_hash[artist] = 1 
+      end
+      
+      out_hash
     
   end
   
