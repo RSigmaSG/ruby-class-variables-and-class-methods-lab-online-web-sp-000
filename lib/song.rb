@@ -23,7 +23,18 @@ class Song
   end
   
   def self.genre_count
-    out_hash = 
+    
+    out_hash = {}
+    
+    @@genres.each do |artist|
+      if out_hash.keys.include?(artist)
+        out_hash[artist] += 1 
+      else
+        out_hash[artist] = 1 
+      end
+      
+      out_hash
+      
   end
   
   def self.genres
