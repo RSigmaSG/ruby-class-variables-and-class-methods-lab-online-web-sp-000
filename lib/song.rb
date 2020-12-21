@@ -23,12 +23,12 @@ class Song
   end
   
   def self.genre_count
-    @@genres.
+    @@genres.uniq.length
   end
   
   def self.genres
     
-    @@genres.collect {|genre, genre_count| genre}
+    @@genres.uniq
     
   end
   
