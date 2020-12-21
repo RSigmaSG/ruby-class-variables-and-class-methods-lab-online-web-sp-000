@@ -23,7 +23,7 @@ class Song
   end
   
   def self.genre_count
-    @@genres.uniq.length
+    out_hash = 
   end
   
   def self.genres
@@ -34,13 +34,13 @@ class Song
   
   def self.artist_count
     
-    @@artists.length
+    @@artists.uniq.length
     
   end
   
   def self.artists
     
-    @@artists
+    @@artists.uniq
     
   end
   
