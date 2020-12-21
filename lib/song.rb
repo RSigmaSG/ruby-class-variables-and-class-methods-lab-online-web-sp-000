@@ -32,8 +32,8 @@ class Song
       else
         out_hash[genre] = 1 
       end
-      
-      out_hash
+    end
+     out_hash
       
   end
   
@@ -53,8 +53,9 @@ class Song
       else
         out_hash[artist] = 1 
       end
-      
-      out_hash
+    end
+    
+    out_hash
     
   end
   
